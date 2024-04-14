@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="{% static '/images/car1.jpg' %}" class="d-block w-100" alt="...">
+
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="{% static '/images/car2.jpg' %}" class="d-block w-100" alt="...">
+
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/images/car3.jpg' %}" class="d-block w-100" alt="...">
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container my-4 p-2 ">
+<figure class="text-center">
+  <blockquote class="blockquote">
+    <div class="alert alert-light" role="alert">
+      <p>Nexus Medical College is a leading healthcare provider in India dedicated to offering exceptional care to our community. With a team of highly skilled and compassionate doctors, nurses, and staff, we are committed to providing comprehensive medical services using the latest technology and evidence-based practices.  Our website is a resource to help you learn more about our services, find a doctor, and manage your health information. Whether you need urgent care, specialized treatment, or preventive care, Nexus Medical College is here to partner with you on your journey to wellness.</p>
+    </div>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+     NEXUS MEDICAL COLLEGE<cite title="Source Title"></cite>
+  </figcaption>
+</figure>
+  </div>
+{% endblock %}
